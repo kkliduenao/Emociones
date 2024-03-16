@@ -6,13 +6,13 @@ from googletrans import Translator
 
 st.title('Análisis de Sentimientos')
 st.subheader("Hello!")
-image = Image.open('emociones.jpg')
+image = Image.open('sentimientos.jpg')
 st.image(image)
 st.subheader("Por favor escribenos aquí la frase que deseas analizar: ")
 
 translator = Translator()
 
-with st.expander('Analizar texto'):
+with st.expander('Analicémoslo...'):
     text = st.text_input('Dinos por favor: ')
     if text:
 
