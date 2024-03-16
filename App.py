@@ -4,15 +4,15 @@ import streamlit as st
 from PIL import Image
 from googletrans import Translator
 
-st.title('Análisis de Sentimiento')
-image = Image.open('emoticones.jpg')
+st.title('Análisis de Sentimientos')
+image = Image.open('emociones.jpg')
 st.image(image)
 st.subheader("Por favor escribe en el campo de texto la frase que deseas analizar")
 
 translator = Translator()
 
 with st.expander('Analizar texto'):
-    text = st.text_input('Escribe por favor: ')
+    text = st.text_input('Dinos por favor: ')
     if text:
 
         translation = translator.translate(text, src="es", dest="en")
